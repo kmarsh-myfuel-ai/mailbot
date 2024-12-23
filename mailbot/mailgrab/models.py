@@ -7,4 +7,5 @@ class EmailBytes(models.Model):
     mailbot_recieve_date = models.DateTimeField('mailbot_recieve_date')
     mailbot_update_date = models.DateTimeField('mailbot_update_date', auto_now=True)
     message_bytes = models.TextField()
+
     
