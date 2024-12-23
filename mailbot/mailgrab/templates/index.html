@@ -4,15 +4,17 @@
     <h1>Ten most recent emails</h1>
     <table>
         <tr>
-            <th>email_message_id</th>
-            <th>email_from</th>
+            <th>imap_uid</th>
+            <th>message_id</th>
+            <th>message_from</th>
             <th>mailbot_recieve_date</th>
             <th>mailbot_update_date</th>
         </tr>
     {% for item in last_ten_emails %}
         <tr>
-            <td>{{ item.email_message_id }}</td>
-            <td>{{ item.email_from }}</td>
+            <td>{{ item.imap_uid }}</td>
+            <td>{{ item.message_id }}</td>
+            <td>{{ item.message_from }}</td>
             <td>{{ item.mailbot_recieve_date }}</td>
             <td>{{ item.mailbot_update_date }}</td>
         </tr>
